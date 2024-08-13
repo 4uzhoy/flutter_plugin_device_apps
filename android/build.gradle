@@ -2,15 +2,13 @@ group 'fr.g123k.deviceapps'
 version '1.0-SNAPSHOT'
 
 buildscript {
-     ext.kotlin_version = "1.7.10"
     repositories {
         google()
         mavenCentral() 
     }
 
     dependencies {
-           classpath("com.android.tools.build:gradle:7.3.0")
-   classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version")
+           classpath("com.android.tools.build:gradle:8.5.1")
     }
 }
 
@@ -22,7 +20,6 @@ rootProject.allprojects {
 }
 
 apply plugin: 'com.android.library'
-apply plugin: "kotlin-android"
 
 android {
     namespace 'fr.g123k.deviceapps'
